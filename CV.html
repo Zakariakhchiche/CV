@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>CV - Zakaria</title>
+  <meta name="description" content="simple CV example created with HTML and CSS">
+  <meta name="author" content="Fly Nerd">
+  <link rel="icon" href="./img/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+	
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body {
+  margin: 0;
+  font-family: 'Raleway';
+  font-size: 16px;
+  line-height: 1.8em;
+}
+
+a {
+  color: #1C9C94;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+article {
+  padding:0 1em;
+}
+
+section{
+  margin: 1em;
+  padding: 1em;
+}
+
+header, main, footer {
+  margin: 0 auto;
+}
+
+header {
+  padding: 2em;
+  text-align: center;
+  background-image: url('peppa.png');
+  background-size: cover;
+  background-position: fixed;
+  color: white;
+}
+
+header section {
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+header img {
+  border-radius: 50%;
+  max-width: 150px;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin: 1em 0;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+h3, h4 {
+  font-weight: bold;
+}
+
+main {
+  max-width: 1140px;
+}
+
+main section:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.fab {
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  margin: 5px;
+  text-align: center;
+}
+
+a .fab {
+  color: white;
+}
+
+.course, .skills {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.course .title {
+  color: #509e98;
+  -ms-flex: 0 0 33.3%;
+  flex: 0 0 33.3%;
+  max-width: 33%;
+}
+
+.course .descrition {
+  -ms-flex: 0 0 66.6%;
+  flex: 0 0 66.6%;
+  max-width: 66.6%;
+}
+
+.course .descrition p {
+  padding-left: 1em;
+}
+
+.skills .column {
+  -ms-flex: 0 0 50%%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.skills .column ul, ul.job-description {
+  list-style-type: none;
+}
+
+.skills .column ul > li:before {
+  content: "►";
+  padding-right: 0.5em;
+  color: #509e98;
+}
+
+.school, .job-title {
+  text-transform: capitalize;
+}
+
+.school span, .job-title span {
+  color: #889499;
+  text-decoration: underline;
+}
+
+ul.job-description li:before{
+  content: "✔";
+  padding-right: 0.5em;
+  color: #509e98;
+}
+
+footer {
+ padding: 1em 1.5em;
+ background: #A7B8BF;
+ color: white;
+ text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+  .course {
+    display: block;
+  }
+
+  .course .title, .course .descrition {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .skills {
+    display: block;
+  }
+
+  .skills .column {
+    max-width: 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+
+</style>
+<body>
+  <header>
+    <div>
+      <img src="0.jpg" />
+    </div>
+    <h1>Zakaria KHCHICHE</h1>
+    <section>
+      <p>Hello! Mon nom est Zakaria KHCHICHE. Passioné par la science de la donnée, et ayant une forte experience métier, je reste à votre disposition pour toutes problématiques d'optimisation .</p>
+      <a href="https://www.linkedin.com/in/zakaria-khchiche-7aa73958/" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </section>
+  </header>
+  <main>
+    <section>
+      <h3>Experiences professionnelles</h3>
+            <article class='course'>
+        <div class='title'>
+          <h4>Datascientist</h4>
+        </div>
+        <div class="descrition">
+          <p>Nettoyage de données et mise en place de modele d'entrainement.</p>
+        </div>
+      </article>
+      <article class='course'>
+        <div class='title'>
+          <h4>Responsable d'exploitation</h4>
+        </div>
+        <div class="descrition">
+          <p>Mise en place et gestion de centre de profit dans le transport de marchandise et la mobilité.</p>
+        </div>
+      </article>
+      <article class='course'>
+        <div class='title'>
+          <h4>Chargé d'affaires Grands Comptes</h4>
+        </div>
+        <div class="descrition">
+          <p>Prospection et suivi de client grands comptes.</p>
+        </div>
+      </article>
+    </section>
+    <section>
+      <h3>Skills</h3>
+      <div class='skills'>
+        <div class='column'>
+          <h4>Expert</h4>
+          <ul>
+            <li>PYTHON</li>
+            <li>R</li>
+            <li>SQL</li>
+            <li>SAP</li>
+          </ul>
+        </div>
+        <div class='column'>
+          <h4>Bonne connaissance</h4>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>WMS</li>
+            <li>TMS</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Languages</h4>
+          <p>🇫🇷 Francais - Langue maternelle</p>
+          <p>🇬🇧 Anglais - Professionnel</p>
+          <p>🇪🇸 Espagnol - Scolaire</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h3>Formation</h3>
+      <article>
+        <div class='school'>
+          <span>2018</span> <strong>Ecole Microsoft IA</strong>
+        </div>
+        <div class="descrition">
+          Titre niveau 2 Developpeur DATA IA
+        </div>
+      </article>
+      <article>
+        <div class='school'>
+          <span>2015</span> <strong>Ecole Superieur de Transport</strong>
+        </div>
+        <div>
+          Master Transport et logistique
+        </div>
+      </article>
+            <article>
+        <div class='school'>
+          <span>2007</span> <strong>Ecole Superieur de Vente</strong>
+        </div>
+        <div class="descrition">
+          Master Responsable en négociation et ingenierie d'affaires
+        </div>
+      </article>
+    </section>
+    <section>
+      <h3>LOISIRS</h3>
+      <article>
+        <div class='leisure'>
+          <span>Association</span> <strong>AJC 78</strong><br> <strong>Position:</strong> Membre fondateur
+        </div>
+        <div>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
